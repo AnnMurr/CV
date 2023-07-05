@@ -1,24 +1,45 @@
-@import '../variables.scss';
+// @import '../variables.scss';
+
+// .contacts {
+//     &__list {
+//         width: fit-content;
+
+//         li {
+//             padding: 15px 0;
+    
+//             a {
+//                 display: flex;
+               
+                
+//                 span {
+//                     padding-left: 50px;
+//                     font-family: $font-Cota;
+//                     font-size: 40px;
+//                     color: beige;
+//                     width: 0;
+//                     opacity: 0;
+//                     transition: all 3s ease;
 
 
-.contacts {
-    &__list li {
-        padding: 15px 0;
-
-        a {
-            display: flex;
-            
-            span {
-                padding-left: 50px;
-                font-family: $font-Cota;
-                font-size: 40px;
-                color: beige;
-            }
-
-            img {
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
-}
+//                     &:hover {
+//                         text-shadow: 6px 6px 2px #000000;
+//                         color: #939191;
+//                     }
+//                 }
+    
+//                 img {
+//                     width: 50px;
+//                     height: 50px;
+                  
+//                     &:hover {
+//                         /* Изменение стилей для span при наведении на img */
+//                         + span {
+//                             opacity: 1;
+//                             width: 100%;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

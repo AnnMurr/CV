@@ -7,9 +7,18 @@
         max-width: 1200px;
         padding: 0 15px;
         margin: 0 auto;
+        border-top: 2px solid $color-White;
     }
 
     &__wrapper {
         padding: 50px;
+    }
+
+    .social-media {
+        margin:  0 auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 400px;
+        width: 100%;
     }
 }

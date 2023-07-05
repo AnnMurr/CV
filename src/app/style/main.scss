@@ -1,3 +1,41 @@
+@import './variables.scss';
+
 .container {
     overflow: hidden;
+}
+
+.duble-line {
+    padding: 15px 0;
+
+    .line {
+        max-width: 335px;
+        width: 100%;
+        height:1px;
+        background-color: $color-White;
+        display: block;
+    
+        &_sub {
+            margin-top: 6px;
+            height: 3px;
+        }
+    }
+}
+
+.progress-bar {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 290px;
+    height: 2px;
+    background-color: #303030;
+    display: block;
+
+
+    &::before {
+        content: '';
+        height: 2px;
+        width: 80%;
+        display: block;
+        background-color: $color-Black;
+    }
+
 }
