@@ -53,7 +53,7 @@
  padding: 0 20px 40px 19px;
 
     &__title {
-        padding-right: 50px;
+        padding-bottom: 20px;
 
         h4 {
             font-family: $font-Mako;
@@ -63,11 +63,15 @@
         }
     }
 
-    &__text li {
-        font-family: $font-Mako;
-        font-size: 18px;
-        color: $color-White;
-        list-style: disc;
-        font-weight: 400;
+    &__text  {
+        padding-left: 20px;
+
+        li {
+            font-family: $font-Mako;
+            font-size: 18px;
+            color: $color-White;
+            list-style: disc;
+            font-weight: 400;
+        }
     }
 }

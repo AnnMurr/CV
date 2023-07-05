@@ -11,7 +11,7 @@
         max-width: 335px;
         width: 100%;
         height:1px;
-        background-color: $color-White;
+        background-color: $color-Perfume;
         display: block;
     
         &_sub {
@@ -25,17 +25,15 @@
     margin-top: 15px;
     width: 100%;
     max-width: 290px;
-    height: 2px;
-    background-color: #303030;
+    height: 4px;
+    background-color: $color-Olivetone;
     display: block;
-
 
     &::before {
         content: '';
-        height: 2px;
+        height: 4px;
         width: 80%;
         display: block;
-        background-color: $color-Black;
+        background-color: $color-Golden-Dream;
     }
-
 }

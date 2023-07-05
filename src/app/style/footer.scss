@@ -1,8 +1,9 @@
 @import './variables.scss';
 
 .footer {
+    position: relative;
     background-color: $color-MineShaft;
-    
+
     .container {
         max-width: 1200px;
         padding: 0 15px;
@@ -11,14 +12,79 @@
     }
 
     &__wrapper {
-        padding: 50px;
+        padding: 50px 0;
     }
 
     .social-media {
-        margin:  0 auto;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         max-width: 400px;
         width: 100%;
+    }
+}
+
+.contact {
+    position: absolute;
+    top: 40px;
+
+    &__email,
+    &__phone {
+        display: flex;
+        background-color: transparent;
+        border-radius: 10px;
+        transition: width 2s ease;
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 10px;
+        padding: 7px;
+        height: 40px;
+        width: 40px;
+
+        a {
+            color: #000;
+            padding-left: 10px;
+            font-size: 17px;
+            font-family: $font-OpenSans;
+            color: $color-White;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 2s ease, visibility 2s ease, color 0.5s ease;
+
+            &:hover {
+                color: #9e9c9c;
+            }
+        }
+    }
+
+    &__email:hover {
+        width: 230px;
+
+        a {
+            visibility: visible;
+            opacity: 1;
+
+        }
+    }
+
+    &__phone:hover {
+        width: 180px;
+
+        a {
+            visibility: visible;
+            opacity: 1;
+
+        }
+    }
+}
+
+.copyright {
+    padding-top: 100px;
+    text-align: center;
+
+    span {
+        color: $color-White;
+        font-family: $font-OpenSans;
+        font-size: 15px;
     }
 }
