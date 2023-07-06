@@ -15,7 +15,7 @@ body {
         max-width: 335px;
         width: 100%;
         height:1px;
-        background-color: $color-Perfume;
+        background-color: $color-Azure-Radiance;
         display: block;
     
         &_sub {
@@ -26,18 +26,20 @@ body {
 }
 
 .progress-bar {
-    margin-top: 15px;
     width: 100%;
     max-width: 290px;
     height: 4px;
     background-color: $color-Olivetone;
-    display: block;
 
-    &::before {
-        content: '';
-        height: 4px;
-        width: 80%;
-        display: block;
-        background-color: $color-Golden-Dream;
-    }
-}
+    &::-webkit-progress-bar {
+        background-color: $color-Olivetone;;
+        border-radius: 10px;
+        transition: all 2s ease;
+      }
+
+      &::-webkit-progress-value {
+        background-color: $color-Golden-Dream;;
+        border-radius: 10px;
+        transition: all 2s ease;
+      }
+  }

@@ -24,18 +24,13 @@
                 font-size: 32px;
                 color: $color-White;
                 font-weight: 400;
+                display: block;
             }
         }
     }
 
     &__details {
         padding-top: 80px;
-
-        &-heading h3 {
-            color: $color-White;
-            font-size: 40px;
-            font-weight: 400;
-        }
 
         &-items {
             display: grid;
