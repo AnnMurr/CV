@@ -1,5 +1,9 @@
 @import './variables.scss';
 
+body {
+    font-family: $font-Mako;
+}
+
 .container {
     overflow: hidden;
 }
