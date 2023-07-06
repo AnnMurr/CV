@@ -1,0 +1,26 @@
+.projects {
+    display: flex;
+    justify-content: space-around;
+
+    &__list {
+        padding-left: 20px !important;
+        max-width: 600px;
+
+        li {
+            font-size: 18px;
+            color: $color-White;
+            list-style: circle;
+            font-weight: 400;   
+           }
+    } 
+
+    &__title  h5 {
+        font-size: 23px;
+        font-weight: 400;
+        color: $color-White;
+    }
+
+    &__links {
+        
+    }
+}

@@ -26,6 +26,7 @@
         position: relative;
         transform-style: preserve-3d;
         transition: transform 1.5s ease;
+        border: 2px solid $color-White;
 
         &_inner {
             @extend %width-height;
@@ -54,7 +55,7 @@
           }
 
           &_back {
-            background-color: $color-Black;
+            background-color: $color-MineShaft;
             transform: rotateY(180deg);
             @extend %flex-center;
 

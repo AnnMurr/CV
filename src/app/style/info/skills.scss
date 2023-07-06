@@ -1,14 +1,6 @@
 @import '../variables.scss';
 
 .skills {
-    &__heading {
-
-        h3 {
-           color: $color-White;
-           font-size: 40px;
-           font-weight: 400;
-        }
-    }
 
     &__list {
         display: flex;

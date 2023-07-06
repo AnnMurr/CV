@@ -12,7 +12,7 @@ export function createSkilsWrapper() {
 
 function createSkillsHeading(text: string): HTMLDivElement {
     const skillsHeading: HTMLDivElement = document.createElement('div')
-    skillsHeading.classList.add('skills__heading')
+    skillsHeading.classList.add('heading')
     const skillsHeadingText: HTMLHeadingElement = document.createElement('h3')
     skillsHeadingText.textContent = text
 

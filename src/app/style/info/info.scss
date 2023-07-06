@@ -2,14 +2,14 @@
 
 .info {
     background-color: $color-MineShaft;
-display: none;
+// display: none;
     &__wrapper {
         width: 100%;
         min-height: 100vh;
     }
 
     .container {
-        max-width: 1400px;
+        max-width: 1260px;
         padding: 0 15px;
         margin: 0 auto;
     }
