@@ -23,12 +23,25 @@
         justify-content: space-between;
         max-width: 400px;
         width: 100%;
+
+        li {
+            @media screen and (max-width: 576px) {
+                width: 40px;
+                height: 40px;
+            }
+        }
     }
 
     .contact {
         position: absolute;
         top: 40px;
-    
+
+        @media screen and (max-width: 924px) {
+            top: 225px;
+            left: 50%;
+            margin-left: -115px;
+        }
+
         &__email,
         &__phone {
             display: flex;
@@ -41,35 +54,35 @@
             padding: 7px;
             height: 40px;
             width: 40px;
-    
+
             a {
                 color: $color-Black;
-                padding-left: 10px;
+                margin-left: 10px;
                 font-size: 17px;
                 font-family: $font-OpenSans;
                 color: $color-White;
                 visibility: hidden;
                 opacity: 0;
                 transition: opacity 2s ease, visibility 2s ease, color 0.5s ease;
-    
+
                 &:hover {
                     color: #9e9c9c;
                 }
             }
         }
-    
+
         &__email:hover {
             width: 230px;
-    
+
             a {
                 visibility: visible;
                 opacity: 1;
             }
         }
-    
+
         &__phone:hover {
             width: 180px;
-    
+
             a {
                 visibility: visible;
                 opacity: 1;
@@ -80,7 +93,11 @@
     .copyright {
         padding-top: 60px;
         text-align: center;
-    
+
+        @media screen and (max-width: 924px) {
+            padding-top: 130px;
+        }
+
         span {
             color: $color-White;
             font-family: $font-OpenSans;
@@ -88,8 +105,3 @@
         }
     }
 }
-        
-        
-       
-
-       

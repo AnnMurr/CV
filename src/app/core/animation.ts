@@ -49,16 +49,17 @@ function setProgressBarValues(): void {
 }
 
 function handleScroll(): void {
-    const skillsSection = document.getElementById('info');
+    const skillsSection = document.getElementById('info')
+
     if (skillsSection) {
-        const skillsSectionTop = skillsSection.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+        const skillsSectionTop = skillsSection.getBoundingClientRect().top
+        const windowHeight = window.innerHeight
         if (skillsSectionTop < windowHeight) {
-           setProgressBarValues()
+            setProgressBarValues()
         }
     }
 }
 
-window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll', handleScroll)
 
-setTimeout(() => handleScroll(), 300);
+setTimeout(() => handleScroll(), 300)

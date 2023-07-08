@@ -3,15 +3,35 @@
     justify-content: space-between;
     padding-bottom: 60px;
 
-    &__list {
-        padding-left: 20px !important;
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+    }
+
+    &__links {
+        padding-top: 40px;
+    }
+
+    &__inner {
         max-width: 600px;
+        padding-right: 30px;
+
+        @media screen and (max-width: 576px) {
+            padding-right: 0;
+        }
+    }
+
+    &__list {
+        padding: 20px 0 0 20px !important;
 
         li {
             font-size: 18px;
             color: $color-White;
             list-style: circle;
             font-weight: 400;
+
+            @media screen and (max-width: 768px) {
+                font-size: 15px;
+            }
         }
     }
 
@@ -19,5 +39,9 @@
         font-size: 23px;
         font-weight: 400;
         color: $color-White;
+
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+        }
     }
 }

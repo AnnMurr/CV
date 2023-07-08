@@ -1,7 +1,10 @@
 @import './style/variables.scss';
 @import './templates.scss';
 
-.general__wrapper {
+.general {
+  background-color: $color-White;
+
+  &__wrapper {
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(2, 1fr);
@@ -9,61 +12,73 @@
     gap: 5px;
     border-bottom: 5px solid $color-White;
   }
-  
-  .card {
-    background-color: $color-MineShaft;
-    @extend %width-height;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+}
 
-    &:hover .card__flip {
-        transform: rotateY(180deg);
-      }
+.card {
+  background-color: $color-MineShaft;
+  @extend %width-height;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 
-    &__flip {
-        @extend %width-height;
-        position: relative;
-        transform-style: preserve-3d;
-        transition: transform 1.5s ease;
-        border: 2px solid $color-White;
-
-        &_inner {
-            @extend %width-height;
-            position: absolute;
-            transform-style: preserve-3d;
-            transition: transform 1.5s ease;
-            perspective: 600px;
-            backface-visibility: hidden;
-          }
-
-          &_back,
-          &_front {
-            @extend %width-height;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            backface-visibility: hidden;
-          }
-
-          &_front {
-            background-color: $color-MineShaft;
-            z-index: 2;
-            @extend %flex-center;
-          }
-
-          &_back {
-            background-color: $color-MineShaft;
-            transform: rotateY(180deg);
-            @extend %flex-center;
-
-            h4 {
-                font-size: 40px;
-                font-family: $font-Cota;
-                color: $color-White;
-              }
-          }
-      }
+  &:hover .card__flip {
+    transform: rotateY(180deg);
   }
+
+  &__flip {
+    @extend %width-height;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.5s ease;
+    border: 2px solid $color-White;
+
+    &_inner {
+      @extend %width-height;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: transform 1.5s ease;
+      perspective: 600px;
+      backface-visibility: hidden;
+    }
+
+    &_back,
+    &_front {
+      @extend %width-height;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      backface-visibility: hidden;
+    }
+
+    &_front {
+      background-color: $color-MineShaft;
+      z-index: 2;
+      @extend %flex-center;
+
+      img {
+        @media screen and (max-width: 576px) {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+
+    &_back {
+      background-color: $color-MineShaft;
+      transform: rotateY(180deg);
+      @extend %flex-center;
+
+      h4 {
+        font-size: 40px;
+        font-family: $font-Cota;
+        color: $color-White;
+
+        @media screen and (max-width: 576px) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

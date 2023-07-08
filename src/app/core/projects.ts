@@ -6,21 +6,22 @@ const infoWrapper: HTMLElement | null = document.querySelector('.info__wrapper')
 
 function createprojectWrapper(): HTMLElement {
     const project: HTMLDivElement = document.createElement('div')
-    project.classList.add('project') 
+    project.classList.add('project')
 
     return project
 }
 
 export function createWorkWrapper(): void {
-   const project: HTMLElement | null = createprojectWrapper()
+    const project: HTMLElement | null = createprojectWrapper()
+
     PROJECT_TEXT.forEach(item => {
         const work: HTMLDivElement = document.createElement('div')
         work.classList.add(item.tag)
-      
         work.append(createWorkDeskription(item.name, item.title, item.text), createProjectLinks(item.site, item.git))
         project.append(work)
     })
-  infoWrapper?.append(project)
+
+    infoWrapper?.append(project)
 }
 
 function createWorkDeskription(name: string, title: string, text: string[]): HTMLElement {
@@ -35,19 +36,19 @@ function createWorkText(wrapper: HTMLElement, title: string, text: string[]) {
     const workTitle: HTMLElement | null = createWorkTitle()
     const workList: HTMLElement | null = createWorkList()
 
-        const workTitleText: HTMLHeadElement = document.createElement('h5')
-        console.log(title)
-        title && (workTitleText.textContent = title)
-        console.log(text)
-        if(text && Array.isArray(text)) {
-            text.forEach(item => {
-                const listItem: HTMLLIElement = document.createElement('li')
-                listItem.textContent = item
-                workList.append(listItem)
-            })    
-        }
-        workTitle.append(workTitleText)
+    const workTitleText: HTMLHeadElement = document.createElement('h5')
 
+    title && (workTitleText.textContent = title)
+
+    if (text && Array.isArray(text)) {
+        text.forEach(item => {
+            const listItem: HTMLLIElement = document.createElement('li')
+            listItem.textContent = item
+            workList.append(listItem)
+        })
+    }
+
+    workTitle.append(workTitleText)
     wrapper.append(workTitle, workList)
 }
 
@@ -73,9 +74,9 @@ function createWorkList(): HTMLElement {
     return workList
 }
 
-function createProjectLinks(webSite:string, github:string): HTMLElement {
+function createProjectLinks(webSite: string, github: string): HTMLElement {
     const links: HTMLDivElement = document.createElement('div')
-    links.classList.add('projects__links')
+    links.classList.add('work__links')
     const webSiteLink = createLinkOnWebsite(webSite)
     const githubLink = reateLinkOnGithub(github)
 

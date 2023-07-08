@@ -12,9 +12,9 @@ interface ProjectTextData {
     git: string
 }
 
-type  DetailsElement =  {
+type DetailsElement = {
     title: string,
-    text:  string[]
+    text: string[]
 }
 
 enum InformationBlockListData {
@@ -24,6 +24,7 @@ enum InformationBlockListData {
     'Live in' = 'Lithuania',
     'Education' = 'International Institute of Management and Business'
 }
+
 enum InformationBlockTextData {
     'text' = `I'm a passionate and dedicated  frontend developer with around 4 months of independent learning and 7 months of formal training experience.\n 
     I have learned html, css, JavaScript, TypeScript and I'm currently in the process of learning React.\n 
@@ -48,55 +49,55 @@ const LIST_ELEMENTS: ListElementsData[] = [
     {
         title: 'HTML',
         class: ['progress-bar', 'html'],
-        attributes: [{'max': '100'}]
+        attributes: [{ 'max': '100' }]
     },
     {
         title: 'CSS',
         class: ['progress-bar', 'css'],
-        attributes: [{'max': '100'}]
+        attributes: [{ 'max': '100' }]
     },
     {
         title: 'Less',
         class: ['progress-bar', 'less'],
-        attributes: [{'max': '100'}]
+        attributes: [{ 'max': '100' }]
 
     },
     {
         title: 'Sass',
         class: ['progress-bar', 'sass'],
-        attributes: [{'max': '100'}]
+        attributes: [{ 'max': '100' }]
     },
     {
         title: 'Scss',
         class: ['progress-bar', 'scss'],
-        attributes: [{'max': '100'}]
+        attributes: [{ 'max': '100' }]
     },
     {
         title: 'Git',
         class: ['progress-bar', 'git'],
-        attributes: [{'max': '100'}]
+        attributes: [{ 'max': '100' }]
     },
     {
         title: 'JavaScript',
         class: ['progress-bar', 'js'],
-        attributes: [{'max': '100'}]
+        attributes: [{ 'max': '100' }]
     },
     {
         title: 'REST API',
         class: ['progress-bar', 'api'],
-        attributes: [{'max': '100'}]
+        attributes: [{ 'max': '100' }]
     },
     {
         title: 'TypeScript',
         class: ['progress-bar', 'ts'],
-        attributes: [{'max': '100'}]
+        attributes: [{ 'max': '100' }]
     },
 ]
 
 const DETAILS_ELEMENTS_DATA: DetailsElement[] = [
     {
         title: 'HTML',
-        text: ['Creating semantic HTML markup.', 'Knowledge of essential HTML tags and their usage.', 'Working with forms and input elements.', 'Understanding the DOM structure and interacting with it using JavaScript.', 'Familiarity with common HTML attributes and properties.'] 
+        text: ['Creating semantic HTML markup.', 'Knowledge of essential HTML tags and their usage.', 'Working with forms and input elements.', 'Understanding the DOM structure and interacting with it using JavaScript.', 'Familiarity with common HTML attributes and properties.']
     },
     {
         title: 'CSS',
@@ -139,11 +140,11 @@ const PROJECT_TEXT: ProjectTextData[] = [
     }
 ]
 
-export { 
-    LIST_ELEMENTS, 
-    DETAILS_ELEMENTS_DATA, 
-    PROJECT_TEXT, 
-    InformationBlockListData, 
+export {
+    LIST_ELEMENTS,
+    DETAILS_ELEMENTS_DATA,
+    PROJECT_TEXT,
+    InformationBlockListData,
     InformationBlockTextData,
     AttributesValue
 }

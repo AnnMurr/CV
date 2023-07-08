@@ -5,7 +5,7 @@ export function createDubleLine(): HTMLDivElement {
     line.classList.add('line')
     const subLine: HTMLSpanElement = document.createElement('span')
     subLine.classList.add('line', 'line_sub')
-
     dubleLine.append(line, subLine)
+
     return dubleLine
 }

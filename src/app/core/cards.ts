@@ -9,22 +9,25 @@ const footer: HTMLElement | null = document.querySelector('.footer')
 const [skills, settings, projects, about] = Array.from(btns)
 
 btns.forEach(element => {
-    element.addEventListener('click', (event) => {
-        infoWrapper && (infoWrapper.innerHTML = '')
-        if (event.target === skills) {   
+    element.addEventListener('click', (event) => { 
+
+        if (event.target === skills) {
+            infoWrapper && (infoWrapper.innerHTML = '')
             createSkilsWrapper()
-            info && (info.style.display = 'block' )
-            footer && (footer.style.display = 'block' )
+            info && (info.style.display = 'block')
+            footer && (footer.style.display = 'block')
             scrollToInfo()
         } else if (event.target === projects) {
+            infoWrapper && (infoWrapper.innerHTML = '')
             createWorkWrapper()
-            info && (info.style.display = 'block' )
-            footer && (footer.style.display = 'block' )
+            info && (info.style.display = 'block')
+            footer && (footer.style.display = 'block')
             scrollToInfo()
         } else if (event.target === about) {
+            infoWrapper && (infoWrapper.innerHTML = '')
             createAboutWrapper()
-            info && (info.style.display = 'block' )
-            footer && (footer.style.display = 'block' )
+            info && (info.style.display = 'block')
+            footer && (footer.style.display = 'block')
             scrollToInfo()
         }
     })
@@ -41,7 +44,7 @@ function scrollToInfo() {
             window.scrollBy(0, scrollStep);
             scrollCount++
 
-            if (scrollCount >= 20) { 
+            if (scrollCount >= 20) {
                 return
             }
 
