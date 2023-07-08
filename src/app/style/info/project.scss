@@ -1,6 +1,7 @@
-.projects {
+.work {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-bottom: 60px;
 
     &__list {
         padding-left: 20px !important;
@@ -10,17 +11,13 @@
             font-size: 18px;
             color: $color-White;
             list-style: circle;
-            font-weight: 400;   
-           }
-    } 
+            font-weight: 400;
+        }
+    }
 
-    &__title  h5 {
+    &__title h5 {
         font-size: 23px;
         font-weight: 400;
         color: $color-White;
-    }
-
-    &__links {
-        
     }
 }

@@ -1,35 +1,14 @@
 import { LIST_ELEMENTS, DETAILS_ELEMENTS_DATA } from "../consts/options"
+import { createDubleLine } from "./helpers/createDubleLine"
+import { createHeading } from "./helpers/createHeaading"
 
 const infoWrapper: HTMLElement | null = document.querySelector('.info__wrapper')
 
 export function createSkilsWrapper() {
     const skills: HTMLElement = document.createElement('div')
     skills.classList.add('skills')
-
-    skills.append(createSkillsHeading('Skills'), createDubleLine(), createSkillsList(), createDetailsWrapper(), createDetailsItemsWrapper())
+    skills.append(createHeading('Skills'), createDubleLine(), createSkillsList(), createDetailsWrapper(), createDetailsItemsWrapper())
     infoWrapper?.append(skills)
-}
-
-function createSkillsHeading(text: string): HTMLDivElement {
-    const skillsHeading: HTMLDivElement = document.createElement('div')
-    skillsHeading.classList.add('heading')
-    const skillsHeadingText: HTMLHeadingElement = document.createElement('h3')
-    skillsHeadingText.textContent = text
-
-    skillsHeading.append(skillsHeadingText)
-    return skillsHeading
-}
-
-function createDubleLine(): HTMLDivElement {
-    const dubleLine: HTMLDivElement = document.createElement('div')
-    dubleLine.classList.add('duble-line')
-    const line: HTMLSpanElement = document.createElement('span')
-    line.classList.add('line')
-    const subLine: HTMLSpanElement = document.createElement('span')
-    subLine.classList.add('line', 'line_sub')
-
-    dubleLine.append(line, subLine)
-    return dubleLine
 }
 
 function createSkillsList(): HTMLUListElement {
@@ -73,7 +52,7 @@ function createListElement(list: HTMLUListElement) {
 function createDetailsWrapper(): HTMLDivElement {
     const details: HTMLDivElement = document.createElement('div')
     details.classList.add('skills__details')
-    details.append(createSkillsHeading('Details'), createDubleLine())
+    details.append(createHeading('Details'), createDubleLine())
 
     return details
 }
@@ -99,9 +78,9 @@ function createDetailsItem(items: HTMLDivElement) {
         option.title && (itemTitleText.textContent = option.title)
 
         if(option.text && Array.isArray(option.text)) {
-            option.text.forEach(list => {
+            option.text.forEach(item => {
                 const itemListText: HTMLLIElement = document.createElement('li')
-                itemListText.textContent = list
+                itemListText.textContent = item
                 itemList.append(itemListText)
             })
         }

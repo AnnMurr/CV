@@ -54,7 +54,7 @@ body {
 
 .heading h3 {
     color: $color-White;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
     line-height: 42px;
 }
@@ -83,7 +83,6 @@ body {
         &:hover {
             opacity: 0.5;
         }
-
     }
 
     &_rainbow {
@@ -130,15 +129,11 @@ body {
     }
 }
 
-
-
-
 @keyframes move {
     to {
         background-position: 1000vh;
     }
 }
-
 
 .footer {
     .btn {
