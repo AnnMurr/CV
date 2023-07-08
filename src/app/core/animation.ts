@@ -35,17 +35,7 @@
 //     animOnScroll();
 // }, 300);
 
-enum AttributesValue {
-    html = 80,
-    css = 80,
-    less = 80,
-    sass = 80,
-    scss = 80,
-    git = 50,
-    js = 70,
-    api = 70,
-    ts = 40
-}
+import { AttributesValue } from "../consts/options"
 
 function setProgressBarValues(): void {
     const progressBars: NodeListOf<Element> = document.querySelectorAll('.progress-bar')
@@ -71,6 +61,4 @@ function handleScroll(): void {
 
 window.addEventListener('scroll', handleScroll);
 
-setTimeout(() => {
-    handleScroll()
-}, 300);
+setTimeout(() => handleScroll(), 300);

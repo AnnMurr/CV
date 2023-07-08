@@ -1,0 +1,52 @@
+@import '../variables.scss';
+
+.about {
+    display: flex;
+    justify-content: space-between;
+
+    .information {
+        max-width: 580px;
+        background-color: $color-Black-Opacity05;
+        box-shadow: 0 0 15px $color-White-Opacity05;
+        border-radius: 10px;
+        padding: 40px 50px;
+
+        &__list {
+            li {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                align-items: baseline;
+
+                & span:first-child {
+                    font-family: $font-OpenSans;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+
+                & span:nth-child(2) {
+                    font-family: $font-OpenSans;
+                    font-weight: 400;
+                    font-size: 18px;
+                    max-width: 280px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &__article {
+            padding-top: 40px;
+
+            p {
+                font-weight: 400;
+                font-size: 17px;
+            }
+        }
+    }
+
+    &__image img{
+        border-radius: 15px;
+
+    }
+}

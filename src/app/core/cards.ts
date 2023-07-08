@@ -1,5 +1,6 @@
 import { createSkilsWrapper } from "./skills"
 import { createWorkWrapper } from "./projects"
+import { createAboutWrapper } from "./about"
 
 const btns: NodeListOf<Element> | null = document.querySelectorAll('.card__flip')
 const info: HTMLElement | null = document.getElementById('info')
@@ -17,6 +18,11 @@ btns.forEach(element => {
             scrollToInfo()
         } else if (event.target === projects) {
             createWorkWrapper()
+            info && (info.style.display = 'block' )
+            footer && (footer.style.display = 'block' )
+            scrollToInfo()
+        } else if (event.target === about) {
+            createAboutWrapper()
             info && (info.style.display = 'block' )
             footer && (footer.style.display = 'block' )
             scrollToInfo()

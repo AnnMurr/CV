@@ -17,6 +17,33 @@ type  DetailsElement =  {
     text:  string[]
 }
 
+enum InformationBlockListData {
+    'Name' = 'Hanna',
+    'Age' = 25,
+    'Originally from' = 'Belarus',
+    'Live in' = 'Lithuania',
+    'Education' = 'International Institute of Management and Business'
+}
+enum InformationBlockTextData {
+    'text' = `I'm a passionate and dedicated  frontend developer with around 4 months of independent learning and 7 months of formal training experience.\n 
+    I have learned html, css, JavaScript, TypeScript and I'm currently in the process of learning React.\n 
+    I'm committed to continuously improving my skills and staying updated with emerging technologies in the frontend development field.\n
+    I'm committed to continuous learning and growth in order to become a well-rounded frontend developer.\n
+    I'm looking forward to get an opportunity to work on challenging projects that allow me to apply my expertise in JavaScript, TypeScript, and React.`
+}
+
+enum AttributesValue {
+    html = 80,
+    css = 80,
+    less = 80,
+    sass = 80,
+    scss = 80,
+    git = 50,
+    js = 70,
+    api = 70,
+    ts = 40
+}
+
 const LIST_ELEMENTS: ListElementsData[] = [
     {
         title: 'HTML',
@@ -112,4 +139,11 @@ const PROJECT_TEXT: ProjectTextData[] = [
     }
 ]
 
-export { LIST_ELEMENTS, DETAILS_ELEMENTS_DATA, PROJECT_TEXT }
+export { 
+    LIST_ELEMENTS, 
+    DETAILS_ELEMENTS_DATA, 
+    PROJECT_TEXT, 
+    InformationBlockListData, 
+    InformationBlockTextData,
+    AttributesValue
+}
