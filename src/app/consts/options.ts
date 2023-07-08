@@ -19,7 +19,7 @@ type DetailsElement = {
 
 enum InformationBlockListData {
     'Name' = 'Hanna',
-    'Age' = 25,
+    'Age' = '25',
     'Originally from' = 'Belarus',
     'Live in' = 'Lithuania',
     'Education' = 'International Institute of Management and Business'

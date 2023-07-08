@@ -9,8 +9,8 @@ const footer: HTMLElement | null = document.querySelector('.footer')
 const [skills, settings, projects, about] = Array.from(btns)
 
 btns.forEach(element => {
-    element.addEventListener('click', (event) => { 
-
+    element.addEventListener('click', (event) => {
+        
         if (event.target === skills) {
             infoWrapper && (infoWrapper.innerHTML = '')
             createSkilsWrapper()

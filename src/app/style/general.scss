@@ -9,8 +9,7 @@
     height: 100vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 5px;
-    border-bottom: 5px solid $color-White;
+    border-bottom: 1px solid $color-White;
   }
 }
 
@@ -30,7 +29,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1.5s ease;
-    border: 2px solid $color-White;
+    border: 1px solid $color-White;
 
     &_inner {
       @extend %width-height;
