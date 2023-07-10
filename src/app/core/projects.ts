@@ -99,10 +99,10 @@ function reateLinkOnGithub(github: string): HTMLElement {
     githubLink.href = github
 
     const githubImg: HTMLImageElement = document.createElement('img')
-    githubImg.src = 'https://drive.google.com/uc?id=1uPrrn6LJcGnO7_KhDnucfHtMmQLB7FLt'
+    githubImg.src = 'https://lh3.googleusercontent.com/pw/AIL4fc-UoXaHT_YT66yKvhb8rqlXLiYFcn9D1ImWRZ_efF9Eb0i1sEDak0Ur1CPojPc7BEa7U7oJbLQDoVGwhHazYEGhgOI37jc3TR8bEfp2s4ElNlTrUNKAfBw0K5l4p4Bc8utSOtXmj_4x88U2AZnraCQ=w40-h40-s-no?authuser=0'
     githubImg.alt = 'github'
     const githubImgBlack: HTMLImageElement = document.createElement('img')
-    githubImgBlack.src = 'https://drive.google.com/uc?id=1uqr-UJ88zvssVbmiLxmhxUKMyVUVns6f'
+    githubImgBlack.src = 'https://lh3.googleusercontent.com/pw/AIL4fc9e7WaexPKfy7-2FMzoWa2J0Xq1kVJD90rPUEC5sCYqYH1jsVBCa-gPruhZYhRSHRY9r--dFCr6fWHTveireq7y91L-QvImfjOIri8G7MMZ51FqlMUS9AHxUfyCEcBjaY7ixSm3xC7_aic5UUsciLs=w40-h40-s-no?authuser=0'
     githubImgBlack.alt = 'github'
 
     githubLink.append(githubImg, githubImgBlack)
