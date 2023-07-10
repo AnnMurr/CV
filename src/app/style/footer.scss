@@ -4,13 +4,11 @@
 .footer {
     display: none;
     position: relative;
-    background-color: $color-MineShaft;
 
     .container {
         max-width: 1200px;
         padding: 0 15px;
         margin: 0 auto;
-        border-top: 2px solid $color-White;
     }
 
     &__wrapper {
@@ -56,11 +54,9 @@
             width: 40px;
 
             a {
-                color: $color-Black;
                 margin-left: 10px;
                 font-size: 17px;
                 font-family: $font-OpenSans;
-                color: $color-White;
                 visibility: hidden;
                 opacity: 0;
                 transition: opacity 2s ease, visibility 2s ease, color 0.5s ease;
@@ -99,7 +95,6 @@
         }
 
         span {
-            color: $color-White;
             font-family: $font-OpenSans;
             font-size: 15px;
         }

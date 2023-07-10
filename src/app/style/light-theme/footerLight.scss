@@ -1,0 +1,137 @@
+.footer {
+    background-color: $color-MineShaft;
+
+    .container {
+        border-top: 2px solid $color-White;
+    }
+
+    .social-media li a {
+        img:nth-child(2) {
+            display: none;
+            transition: all 0.5s ease;
+        }
+    }
+
+    .contact {
+
+        &__email,
+        &__phone {
+            img:nth-child(2) {
+                display: none;
+                transition: all 0.5s ease;
+            }
+
+            a {
+                color: $color-White;
+
+                &:hover {
+                    color: #9e9c9c;
+                }
+            }
+        }
+    }
+
+    .copyright span {
+        color: $color-White;
+    }
+
+    .btn {
+        color: $color-White;
+        background-color: $color-Black;
+        transition: all 0.5s ease;
+
+        &:active {
+            color: $color-White;
+        }
+
+        &:active:after {
+            background: transparent;
+        }
+
+        &:after {
+            background: $color-Black;
+        }
+
+    }
+
+    &.white-theme {
+        background-color: $color-light-gray;
+
+        .container {
+            border-top: 2px solid $color-Black;
+        }
+
+        .social-media li a {
+            img:first-child {
+                display: none;
+            }
+
+            img:nth-child(2) {
+                display: block;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .contact {
+
+            &__email,
+            &__phone {
+                a {
+                    color: $color-Black;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+
+                img {
+                    &:nth-child(2) {
+                        display: block;
+                    }
+
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            color: $color-White;
+            background-color: $color-MineShaft;
+
+            &::before {
+                background: none;
+            }
+
+            &::after {
+                background: $color-MineShaft;
+            }
+
+            &:hover {
+                background-color: transparent;
+                color: $color-Black;
+
+                &::after {
+                    background: transparent;
+                    border: 3px solid $color-MineShaft;
+                }
+            }
+
+            &:active {
+                color: $color-Black;
+            }
+
+            &:active:after {
+                background: transparent;
+            }
+        }
+
+        .copyright span {
+            color: $color-Black;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+body {
+    background-color: $color-MineShaft;
+
+    &.white-theme {
+        background-color: $color-light-gray;
+    }
+}
+

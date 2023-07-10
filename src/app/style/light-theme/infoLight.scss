@@ -1,0 +1,229 @@
+.info {
+    background-color: $color-MineShaft;
+
+    .heading h3 {
+        color: $color-White;
+    }
+
+    .duble-line {
+        .line {
+            background-color: $color-Azure-Radiance;
+
+            .work & {
+                background-color: $color-Golden-Dream;
+            }
+        }
+    }
+
+    .progress-bar {
+        background-color: $color-Olivetone;
+
+        &::-webkit-progress-bar {
+            background-color: $color-Olivetone;
+        }
+
+        &::-webkit-progress-value {
+            background-color: $color-Golden-Dream;
+        }
+    }
+
+    .skills {
+        &__list li span {
+            color: $color-White;
+        }
+    }
+
+    .details-item {
+        &__title h4 {
+            color: $color-White;
+        }
+
+        &__text li {
+            color: $color-White;
+        }
+    }
+
+    .about {
+        .information {
+            background-color: $color-Black-Opacity02;
+            box-shadow: 0 0 15px $color-White-Opacity05;
+
+            &__list li {
+                & span:first-child {
+                    color: $color-White;
+                }
+
+                & span:nth-child(2) {
+                    color: $color-White;
+                }
+            }
+
+            &__article p {
+                color: $color-White;
+            }
+        }
+    }
+
+    .work {
+        &__list li {
+            color: $color-White;
+        }
+    
+        &__title h5 {
+    
+            color: $color-White;
+        }
+
+        .work__links a:nth-child(2) {
+            img:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+
+    .btn {
+        &_small {
+            border: 2px solid $color-White;
+        }
+
+        &_rainbow {
+            transition: all 0.5s ease;
+            background-image:
+                linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    
+            &:before {
+                background-color: $color-MineShaft;
+            }
+    
+            &:after {
+                transition: all 0.5s ease;
+                color: $color-White;
+                background-image:
+                    linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            }
+    
+        }
+    }
+
+    &.white-theme {
+        background-color: $color-light-gray;
+
+        .heading h3 {
+            color: $color-Black;
+        }
+
+        .line {
+            background-color: $color-Black;
+            background-color: rgb(97, 97, 97);
+
+            .work {
+                background-color: $color-Black;
+                background-color: rgb(97, 97, 97);
+            }
+        }
+
+        .progress-bar {
+            background-color: rgb(194, 194, 194);
+
+            &::-webkit-progress-bar {
+                background-color: rgb(194, 194, 194);
+            }
+
+            &::-webkit-progress-value {
+                background-color: rgb(145, 11, 11);
+            }
+        }
+
+        .skills {
+            &__list li span {
+                color: $color-Black;
+            }
+        }
+
+        .details-item {
+            &__title h4 {
+                color: $color-Black;
+            }
+
+            &__text li {
+                color: $color-Black;
+            }
+        }
+
+        .about {
+            .information {
+                background-color:transparent;
+                box-shadow: none;
+                border: 2px solid black;
+
+                &__list li {
+                    & span:first-child {
+                        color: $color-Black;
+                    }
+    
+                    & span:nth-child(2) {
+                        color: $color-Black;
+                    }
+                }
+    
+                &__article p {
+                    color: $color-Black;
+                }
+            }
+        }
+
+        .work {
+            &__list li {
+                color: $color-Black;
+            }
+        
+            &__title h5 {
+        
+                color: $color-Black;
+            }
+
+            .work__links a:nth-child(2) {
+                img:nth-child(2) {
+                    display: block;
+                }
+
+                img:first-child {
+                    display: none;
+                }
+            }
+        }
+
+        .btn {
+            &_small {
+                border: 2px solid $color-Black;
+            }
+
+            &_rainbow {
+                background-image: none;
+                background-color: $color-MineShaft;
+                border: 3px solid $color-MineShaft;
+               
+
+                &:hover {
+                    background-color: transparent;
+                
+
+                    &::after {
+                        color: $color-Black;
+                    }
+                }
+        
+                &:before {
+                    background-color: transparent;
+                }
+        
+                &:after {
+                    background-image: none;
+                }
+        
+            }
+        }
+    }
+}
+
+

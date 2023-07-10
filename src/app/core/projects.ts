@@ -101,8 +101,11 @@ function reateLinkOnGithub(github: string): HTMLElement {
     const githubImg: HTMLImageElement = document.createElement('img')
     githubImg.src = 'https://drive.google.com/uc?id=1uPrrn6LJcGnO7_KhDnucfHtMmQLB7FLt'
     githubImg.alt = 'github'
+    const githubImgBlack: HTMLImageElement = document.createElement('img')
+    githubImgBlack.src = 'https://drive.google.com/uc?id=1uqr-UJ88zvssVbmiLxmhxUKMyVUVns6f'
+    githubImgBlack.alt = 'github'
 
-    githubLink.append(githubImg)
+    githubLink.append(githubImg, githubImgBlack)
 
     return githubLink
 }

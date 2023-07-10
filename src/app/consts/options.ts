@@ -1,3 +1,5 @@
+import { getAge } from "../core/helpers/getAge"
+
 interface ListElementsData {
     title: string,
     class: string[],
@@ -17,12 +19,12 @@ type DetailsElement = {
     text: string[]
 }
 
-enum InformationBlockListData {
-    'Name' = 'Hanna',
-    'Age' = '25',
-    'Originally from' = 'Belarus',
-    'Live in' = 'Lithuania',
-    'Education' = 'International Institute of Management and Business'
+const InformationBlockListData = {
+    'Name': 'Hanna',
+    'Age': getAge(),
+    'Originally from': 'Belarus',
+    'Live in': 'Lithuania',
+    'Education': 'International Institute of Management and Business'
 }
 
 enum InformationBlockTextData {

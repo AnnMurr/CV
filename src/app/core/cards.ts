@@ -1,6 +1,7 @@
 import { createSkilsWrapper } from "./skills"
 import { createWorkWrapper } from "./projects"
 import { createAboutWrapper } from "./about"
+import { toggleTheme } from "./theme"
 
 const btns: NodeListOf<Element> | null = document.querySelectorAll('.card__flip')
 const info: HTMLElement | null = document.getElementById('info')
@@ -54,3 +55,8 @@ function scrollToInfo() {
         scrollAnimation()
     }
 }
+
+
+const toggleThemeButton = settings
+
+toggleThemeButton.addEventListener('click', toggleTheme)

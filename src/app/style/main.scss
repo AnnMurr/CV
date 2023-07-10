@@ -2,8 +2,6 @@
 
 body {
     font-family: $font-Mako;
-    color: $color-White;
-    background-color: $color-MineShaft;
 }
 
 .container {
@@ -17,11 +15,9 @@ body {
         max-width: 27%;
         width: 100%;
         height: 1px;
-        background-color: $color-Azure-Radiance;
         display: block;
 
         .work & {
-            background-color: $color-Golden-Dream;
             max-width: 50%;
         }
 
@@ -48,7 +44,6 @@ body {
     width: 100%;
     max-width: 48%;
     height: 4px;
-    background-color: $color-Olivetone;
 
     @media screen and (max-width: 576px) {
         max-width: 70%;
@@ -59,20 +54,17 @@ body {
     }
 
     &::-webkit-progress-bar {
-        background-color: $color-Olivetone;
         border-radius: 10px;
         transition: all 2s ease;
     }
 
     &::-webkit-progress-value {
-        background-color: $color-Golden-Dream;
         border-radius: 10px;
         transition: all 2s ease;
     }
 }
 
 .heading h3 {
-    color: $color-White;
     font-size: 35px;
     font-weight: 400;
     line-height: 42px;
@@ -90,14 +82,12 @@ body {
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    color: $color-White;
     font-family: $font-OpenSans;
     font-size: 20px;
     display: block;
 
     &_small {
         margin-top: 20px;
-        border: 2px solid $color-White;
         padding: 5px;
         height: auto;
         max-width: fit-content;
@@ -123,7 +113,6 @@ body {
             position: absolute;
             width: 220px;
             height: 50px;
-            background-color: $color-MineShaft;
             top: 5px;
             left: 5px;
             border-radius: 5px;
@@ -136,10 +125,7 @@ body {
             top: 50%;
             left: 50%;
             right: -129px;
-            background-image:
-                linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: $color-White;
         }
 
         &:hover {
@@ -152,8 +138,6 @@ body {
     }
 
     .footer & {
-        background-color: #000;
-        color: #9e9c9c;
         @extend %flex-center;
         margin: 60px auto 0 auto;
 
@@ -174,14 +158,6 @@ body {
             border-radius: 10px;
         }
 
-        &:active {
-            color: #000
-        }
-
-        &:active:after {
-            background: transparent;
-        }
-
         &:hover:before {
             opacity: 1;
         }
@@ -192,7 +168,6 @@ body {
             position: absolute;
             width: 100%;
             height: 100%;
-            background: #111;
             left: 0;
             top: 0;
             border-radius: 10px;
