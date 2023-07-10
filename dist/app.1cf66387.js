@@ -516,95 +516,6 @@ function createImageBlock() {
   imageWrapper.append(image);
   return imageWrapper;
 }
-},{"../consts/options":"src/app/consts/options.ts"}],"src/app/core/cards.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.toggleThemeButton = void 0;
-var skills_1 = require("./skills");
-var projects_1 = require("./projects");
-var about_1 = require("./about");
-var btns = document.querySelectorAll('.card__flip');
-var info = document.getElementById('info');
-var infoWrapper = document.querySelector('.info__wrapper');
-var footer = document.querySelector('.footer');
-var _a = Array.from(btns),
-  skills = _a[0],
-  settings = _a[1],
-  projects = _a[2],
-  about = _a[3];
-exports.toggleThemeButton = settings;
-btns.forEach(function (element) {
-  element.addEventListener('click', function (event) {
-    if (event.target === skills) {
-      infoWrapper && (infoWrapper.innerHTML = '');
-      (0, skills_1.createSkilsWrapper)();
-      info && (info.style.display = 'block');
-      footer && (footer.style.display = 'block');
-      scrollToInfo();
-    } else if (event.target === projects) {
-      infoWrapper && (infoWrapper.innerHTML = '');
-      (0, projects_1.createWorkWrapper)();
-      info && (info.style.display = 'block');
-      footer && (footer.style.display = 'block');
-      scrollToInfo();
-    } else if (event.target === about) {
-      infoWrapper && (infoWrapper.innerHTML = '');
-      (0, about_1.createAboutWrapper)();
-      info && (info.style.display = 'block');
-      footer && (footer.style.display = 'block');
-      scrollToInfo();
-    }
-  });
-});
-function scrollToInfo() {
-  var infoSection = document.getElementById('info');
-  if (infoSection) {
-    var infoSectionTop = infoSection.getBoundingClientRect().top;
-    var scrollStep_1 = infoSectionTop / 20;
-    var scrollCount_1 = 0;
-    var scrollAnimation_1 = function scrollAnimation_1() {
-      window.scrollBy(0, scrollStep_1);
-      scrollCount_1++;
-      if (scrollCount_1 >= 20) {
-        return;
-      }
-      requestAnimationFrame(scrollAnimation_1);
-    };
-    scrollAnimation_1();
-  }
-}
-},{"./skills":"src/app/core/skills.ts","./projects":"src/app/core/projects.ts","./about":"src/app/core/about.ts"}],"src/app/core/animation.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var options_1 = require("../consts/options");
-function setProgressBarValues() {
-  var progressBars = document.querySelectorAll('.progress-bar');
-  progressBars.forEach(function (progress) {
-    var progressClass = progress.classList[1];
-    var attributeValue = options_1.AttributesValue[progressClass];
-    attributeValue && progress.setAttribute('value', "".concat(attributeValue));
-  });
-}
-function handleScroll() {
-  var skillsSection = document.getElementById('info');
-  if (skillsSection) {
-    var skillsSectionTop = skillsSection.getBoundingClientRect().top;
-    var windowHeight = window.innerHeight;
-    if (skillsSectionTop < windowHeight) {
-      setProgressBarValues();
-    }
-  }
-}
-window.addEventListener('scroll', handleScroll);
-setTimeout(function () {
-  return handleScroll();
-}, 300);
 },{"../consts/options":"src/app/consts/options.ts"}],"src/app/storage/themeStorage.ts":[function(require,module,exports) {
 "use strict";
 
@@ -630,7 +541,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.toggleTheme = void 0;
-var cards_1 = require("./cards");
 var themeStorage_1 = require("../storage/themeStorage");
 var elements = document.querySelectorAll('.theme');
 var toggleThemeButtonText = document.querySelector('.theme-text');
@@ -659,14 +569,100 @@ function checkTheme() {
     });
   }
 }
-var init = function init() {
-  cards_1.toggleThemeButton.addEventListener('click', toggleTheme);
-  checkTheme();
-};
 document.addEventListener('DOMContentLoaded', function () {
-  return init();
+  return checkTheme();
 });
-},{"./cards":"src/app/core/cards.ts","../storage/themeStorage":"src/app/storage/themeStorage.ts"}],"src/app/index.ts":[function(require,module,exports) {
+},{"../storage/themeStorage":"src/app/storage/themeStorage.ts"}],"src/app/core/cards.ts":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var skills_1 = require("./skills");
+var projects_1 = require("./projects");
+var about_1 = require("./about");
+var theme_1 = require("./theme");
+var btns = document.querySelectorAll('.card__flip');
+var info = document.getElementById('info');
+var infoWrapper = document.querySelector('.info__wrapper');
+var footer = document.querySelector('.footer');
+var _a = Array.from(btns),
+  skills = _a[0],
+  settings = _a[1],
+  projects = _a[2],
+  about = _a[3];
+btns.forEach(function (element) {
+  element.addEventListener('click', function (event) {
+    if (event.target === skills) {
+      infoWrapper && (infoWrapper.innerHTML = '');
+      (0, skills_1.createSkilsWrapper)();
+      info && (info.style.display = 'block');
+      footer && (footer.style.display = 'block');
+      scrollToInfo();
+    } else if (event.target === projects) {
+      infoWrapper && (infoWrapper.innerHTML = '');
+      (0, projects_1.createWorkWrapper)();
+      info && (info.style.display = 'block');
+      footer && (footer.style.display = 'block');
+      scrollToInfo();
+    } else if (event.target === about) {
+      infoWrapper && (infoWrapper.innerHTML = '');
+      (0, about_1.createAboutWrapper)();
+      info && (info.style.display = 'block');
+      footer && (footer.style.display = 'block');
+      scrollToInfo();
+    } else if (event.target === settings) {
+      (0, theme_1.toggleTheme)();
+    }
+  });
+});
+function scrollToInfo() {
+  var infoSection = document.getElementById('info');
+  if (infoSection) {
+    var infoSectionTop = infoSection.getBoundingClientRect().top;
+    var scrollStep_1 = infoSectionTop / 20;
+    var scrollCount_1 = 0;
+    var scrollAnimation_1 = function scrollAnimation_1() {
+      window.scrollBy(0, scrollStep_1);
+      scrollCount_1++;
+      if (scrollCount_1 >= 20) {
+        return;
+      }
+      requestAnimationFrame(scrollAnimation_1);
+    };
+    scrollAnimation_1();
+  }
+}
+},{"./skills":"src/app/core/skills.ts","./projects":"src/app/core/projects.ts","./about":"src/app/core/about.ts","./theme":"src/app/core/theme.ts"}],"src/app/core/animation.ts":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var options_1 = require("../consts/options");
+function setProgressBarValues() {
+  var progressBars = document.querySelectorAll('.progress-bar');
+  progressBars.forEach(function (progress) {
+    var progressClass = progress.classList[1];
+    var attributeValue = options_1.AttributesValue[progressClass];
+    attributeValue && progress.setAttribute('value', "".concat(attributeValue));
+  });
+}
+function handleScroll() {
+  var skillsSection = document.getElementById('info');
+  if (skillsSection) {
+    var skillsSectionTop = skillsSection.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+    if (skillsSectionTop < windowHeight) {
+      setProgressBarValues();
+    }
+  }
+}
+window.addEventListener('scroll', handleScroll);
+setTimeout(function () {
+  return handleScroll();
+}, 300);
+},{"../consts/options":"src/app/consts/options.ts"}],"src/app/index.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -703,7 +699,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52998" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65514" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

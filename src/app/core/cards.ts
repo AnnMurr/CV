@@ -1,14 +1,13 @@
 import { createSkilsWrapper } from "./skills"
 import { createWorkWrapper } from "./projects"
 import { createAboutWrapper } from "./about"
+import { toggleTheme } from "./theme"
 
 const btns: NodeListOf<Element> | null = document.querySelectorAll('.card__flip')
 const info: HTMLElement | null = document.getElementById('info')
 const infoWrapper: HTMLElement | null = document.querySelector('.info__wrapper')
 const footer: HTMLElement | null = document.querySelector('.footer')
 const [skills, settings, projects, about] = Array.from(btns)
-
-export const toggleThemeButton = settings
 
 btns.forEach(element => {
     element.addEventListener('click', (event) => {
@@ -31,6 +30,8 @@ btns.forEach(element => {
             info && (info.style.display = 'block')
             footer && (footer.style.display = 'block')
             scrollToInfo()
+        } else if (event.target === settings) {
+            toggleTheme()
         }
     })
 })

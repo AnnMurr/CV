@@ -1,4 +1,3 @@
-import { toggleThemeButton } from "./cards"
 import { ThemeStore } from "../storage/themeStorage"
 
 const elements: NodeListOf<Element> = document.querySelectorAll('.theme')
@@ -32,9 +31,4 @@ function checkTheme(): void {
     }
 }
 
-const init = (): void => {
-    toggleThemeButton.addEventListener('click', toggleTheme)
-    checkTheme()
-}
-
-document.addEventListener('DOMContentLoaded', () => init())
+document.addEventListener('DOMContentLoaded', () => checkTheme())

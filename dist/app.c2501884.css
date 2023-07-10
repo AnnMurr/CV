@@ -325,7 +325,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .card__flip_back h4 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -400,14 +400,14 @@ body {
   color: #9e9c9c;
 }
 .footer .contact__email:hover {
-  width: 230px;
+  width: 100%;
 }
 .footer .contact__email:hover a {
   visibility: visible;
   opacity: 1;
 }
 .footer .contact__phone:hover {
-  width: 180px;
+  width: 100%;
 }
 .footer .contact__phone:hover a {
   visibility: visible;
