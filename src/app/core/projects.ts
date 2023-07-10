@@ -32,7 +32,7 @@ function createWorkDeskription(name: string, title: string, text: string[]): HTM
     return deskription
 }
 
-function createWorkText(wrapper: HTMLElement, title: string, text: string[]) {
+function createWorkText(wrapper: HTMLElement, title: string, text: string[]): void {
     const workTitle: HTMLElement | null = createWorkTitle()
     const workList: HTMLElement | null = createWorkList()
 

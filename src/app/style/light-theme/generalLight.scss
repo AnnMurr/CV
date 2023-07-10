@@ -1,71 +1,169 @@
 
 
+// .general {
+//     background-color: $color-White;
+
+//     &.white-theme {
+//         background-color: $color-Black;
+//     }
+
+//     &__wrapper {
+//         border-bottom: 1px solid $color-White;
+
+//         &.white-theme {
+//             border-bottom: 1px solid $color-Black;
+//         }
+//     }
+// }
+
+// .card {
+//     background-color: $color-MineShaft;
+
+//     &.white-theme {
+//         background-color: $color-light-gray;
+//     }
+
+//     &__flip {
+//         border: 1px solid $color-White;
+
+//         &.white-theme {
+//             border: 1px solid $color-Black;
+//         }
+
+//         &_front {
+//             background-color: $color-MineShaft;
+
+//             img:nth-child(2) {
+//                 display: none;
+//             }
+
+//             &.white-theme {
+//                 background-color: $color-light-gray;
+
+//                 &>img {
+//                     &:nth-child(2) {
+//                         display: block;
+//                     }
+
+//                     &:first-child {
+//                         display: none;
+//                     }
+//                 }
+//             }
+//         }
+
+//         &_back {
+//             background-color: $color-MineShaft;
+
+//             .moon {
+//                 display: none;
+//             }
+
+//             &.white-theme {
+//                 background-color: $color-light-gray;
+
+//                 .sun {
+//                     display: none;
+//                 }
+
+//                 .moon {
+//                     display: block;
+//                 }   
+//             }
+
+//             h4 {
+//                 color: $color-White;
+//             }
+
+//             &.white-theme>h4 {
+//                 color: $color-Black;
+//             }
+//         }
+//     }
+// }
+
+
+
 .general {
     background-color: $color-White;
 
-    &.white-theme {
-        background-color: $color-Black;
-    }
-
     &__wrapper {
         border-bottom: 1px solid $color-White;
-
-        &.white-theme {
-            border-bottom: 1px solid $color-Black;
-        }
-    }
-}
-
-.card {
-    background-color: $color-MineShaft;
-
-    &.white-theme {
-        background-color: $color-light-gray;
     }
 
-    &__flip {
-        border: 1px solid $color-White;
-
-        &.white-theme {
-            border: 1px solid $color-Black;
-        }
-
-        &_front {
-            background-color: $color-MineShaft;
-
-            img:nth-child(2) {
-                display: none;
+    .card {
+        background-color: $color-MineShaft;
+    
+        &__flip {
+            border: 1px solid $color-White;
+    
+            &_front {
+                background-color: $color-MineShaft;
+    
+                img:nth-child(2) {
+                    display: none;
+                }
             }
-
-            &.white-theme {
-                background-color: $color-light-gray;
-
-                &>img {
-                    &:nth-child(2) {
-                        display: block;
-                    }
-
-                    &:first-child {
-                        display: none;
-                    }
+    
+            &_back {
+                background-color: $color-MineShaft;
+    
+                .moon {
+                    display: none;
+                }
+    
+                h4 {
+                    color: $color-White;
                 }
             }
         }
-
-        &_back {
-            background-color: $color-MineShaft;
-
-            &.white-theme {
-                background-color: $color-light-gray;
-            }
-
-            h4 {
-                color: $color-White;
-            }
-
-            &.white-theme>h4 {
-                color: $color-Black;
-            }
-        }
     }
+
+    &.white-theme {
+        background-color: $color-Black;
+
+        &__wrapper {
+            border-bottom: 1px solid $color-Black;
+        }
+
+        .card {
+            background-color: $color-light-gray;
+
+            &__flip {
+                    border: 1px solid $color-Black;
+
+                    &_front {
+                        background-color: $color-light-gray;
+            
+                        img {
+                            &:nth-child(2) {
+                                display: block;
+                            }
+        
+                            &:first-child {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &_back {
+                        background-color: $color-light-gray;
+            
+                        .sun {
+                            display: none;
+                        }
+        
+                        .moon {
+                            display: block;
+                        }   
+            
+                        h4 { 
+                            color: $color-Black;
+                        }
+            
+                    }
+                }
+        }
+    } 
 }
+

@@ -43,6 +43,7 @@
     &_back,
     &_front {
       @extend %width-height;
+      flex-direction: column;
       position: absolute;
       top: 0;
       left: 0;

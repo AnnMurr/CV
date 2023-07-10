@@ -4,7 +4,7 @@ import { createHeading } from "./helpers/createHeaading"
 
 const infoWrapper: HTMLElement | null = document.querySelector('.info__wrapper')
 
-export function createSkilsWrapper() {
+export function createSkilsWrapper(): void {
     const skills: HTMLElement = document.createElement('div')
     skills.classList.add('skills')
     skills.append(createHeading('Skills'), createDubleLine(), createSkillsList(), createDetailsWrapper(), createDetailsItemsWrapper())
@@ -19,7 +19,7 @@ function createSkillsList(): HTMLUListElement {
     return list
 }
 
-function createListElement(list: HTMLUListElement) {
+function createListElement(list: HTMLUListElement): void {
     const slillsList:HTMLUListElement = list
 
     LIST_ELEMENTS.forEach(option => {
@@ -28,7 +28,7 @@ function createListElement(list: HTMLUListElement) {
         const progressBar: HTMLProgressElement = document.createElement('progress')
 
         option.title && option.title.length > 0 && (listTitle.textContent = option.title)
-        // option.class && option.class.length > 0 && (progressBar.classList.add(option.class)) 
+
         if(option.class && Array.isArray(option.class)) {
             option.class.forEach(element => {
                 progressBar.classList.add(element)
@@ -47,8 +47,6 @@ function createListElement(list: HTMLUListElement) {
     })
 }
 
-
-
 function createDetailsWrapper(): HTMLDivElement {
     const details: HTMLDivElement = document.createElement('div')
     details.classList.add('skills__details')
@@ -65,7 +63,7 @@ function createDetailsItemsWrapper(): HTMLDivElement {
     return items
 }
 
-function createDetailsItem(items: HTMLDivElement) {
+function createDetailsItem(items: HTMLDivElement): void {
     DETAILS_ELEMENTS_DATA.forEach(option => {
         const item: HTMLDivElement = document.createElement('div')
         item.classList.add('details-item')
@@ -90,4 +88,3 @@ function createDetailsItem(items: HTMLDivElement) {
         items.append(item)
     })
 }
-
