@@ -44,7 +44,7 @@ enum AttributesValue {
     git = 50,
     js = 70,
     api = 70,
-    ts = 40
+    ts = 50
 }
 
 const LIST_ELEMENTS: ListElementsData[] = [
@@ -111,7 +111,7 @@ const DETAILS_ELEMENTS_DATA: DetailsElement[] = [
     },
     {
         title: `Git`,
-        text: ['Proficient in using Git for version control and collaboration.', 'Familiarity with common Git commands like init, clone, add, commit, push, pull, and merge.', 'Understanding branching and merging strategies.', 'Collaborating with team members using.', 'Creating and initializing Git repositories.', 'Cloning and forking repositories.']
+        text: ['Proficient in using Git for version control and collaboration.', 'Familiarity with common Git commands like init, clone, add, commit, push, pull, and merge.', 'Understanding branching and merging strategies.', 'Collaborating with team members.', 'Creating and initializing Git repositories.', 'Cloning and forking repositories.']
     },
     {
         title: `JavaScript`,
@@ -120,6 +120,10 @@ const DETAILS_ELEMENTS_DATA: DetailsElement[] = [
     {
         title: `REST API`,
         text: ['Proficiency in using the Fetch API to make HTTP requests and interact with RESTful APIs.', 'Knowledge of handling different types of requests such as GET, POST, PUT, DELETE.', 'Understanding of handling request headers, query parameters, and request payloads.', 'Experience in asynchronously retrieving data from REST APIs and updating the UI with the fetched data.', 'Usage of Promises or async/await to handle asynchronous operations and manage API responses.', 'Knowledge of handling API errors and implementing error handling mechanisms.']
+    },
+    {
+        title: `TypeScript`,
+        text: ['Understanding of TypeScript syntax, features, and benefits.', 'Ability to define and enforce data types for variables, functions, and objects.', 'Knowledge of using interfaces, classes, and modules to create modular and scalable code structures.']
     }
 ]
 
