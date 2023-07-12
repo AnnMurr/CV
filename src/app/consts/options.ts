@@ -111,7 +111,7 @@ const DETAILS_ELEMENTS_DATA: DetailsElement[] = [
     },
     {
         title: `Git`,
-        text: ['Proficient in using Git for version control and collaboration.', 'Familiarity with common Git commands like init, clone, add, commit, push, pull, and merge.', 'Understanding branching and merging strategies.', 'Collaborating with team members.', 'Creating and initializing Git repositories.', 'Cloning and forking repositories.']
+        text: ['Proficient in using Git for version control and collaboration.', 'Familiarity with common Git commands like init, clone, add, commit, push, pull, and merge.', 'Understanding branching and merging strategies.', 'Collaborating with team members using.', 'Creating and initializing Git repositories.', 'Cloning and forking repositories.']
     },
     {
         title: `JavaScript`,
