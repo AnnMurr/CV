@@ -132,7 +132,7 @@ const PROJECT_TEXT: ProjectTextData[] = [
         tag: 'work',
         name: '4Scopes',
         title: 'Team work project that is a prototype of Wildberries',
-        text: ['Product cards are created dynamically from API.', 'Basket is created dynamicaly, basket items are saved in localStorage.', 'Authentication modals are created dynamicaly, user data store in API, user token is saved in SessionStorage.', 'Search & filters are implemented on the website.', 'All the pictures are created from API- there are footer-bar and footer-accordion in mobile version.'],
+        text: ['Product cards are created dynamically from API.', 'Basket is created dynamicaly, basket items are saved in localStorage.', 'Authentication modals are created dynamicaly, user data store in API, user token is saved in SessionStorage.', 'Search & filters are implemented on the website.', 'All the pictures are created from API- there are footer-bar and footer-accordion in mobile version.', 'Mobile verison is not ready fully.'],
         site: 'https://4-scopes.netlify.app/',
         git: 'https://github.com/AnnMurr/wildberries_4scopes'
     },
@@ -140,7 +140,7 @@ const PROJECT_TEXT: ProjectTextData[] = [
         tag: 'work',
         name: 'L.Miloris',
         title: 'Creted e-shop web-site using the following technologies: JS, LESS, REST API, Parcel',
-        text: ['Basket - adding item to user\'s basket, count of items in it, sync with API (Users).', 'Authentication - log in, log out, sign up, sync with API (Users).', 'Product Cards - dynamically created product cards from API (Cards).', 'Implemented anumations using CSS keyframes + JS.', 'Mobile verison is not ready fully.'],
+        text: ['Basket - adding item to user\'s basket, count of items in it, sync with API (Users).', 'Authentication - log in, log out, sign up, sync with API (Users).', 'Product Cards - dynamically created product cards from API (Cards).', 'Implemented anumations using CSS keyframes + JS.'],
         site: 'https://main--l-miloris-perfume.netlify.app/',
         git: 'https://github.com/AnnMurr/Labos-Miloris'
     }
