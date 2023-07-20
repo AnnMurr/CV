@@ -132,7 +132,7 @@ const PROJECT_TEXT: ProjectTextData[] = [
         tag: 'work',
         name: '4Scopes',
         title: 'Team work project that is a prototype of Wildberries',
-        text: ['Product cards are created dynamically from API.', 'Basket is created dynamicaly, basket items are saved in localStorage.', 'Authentication modals are created dynamicaly, user data store in API, user token is saved in SessionStorage.', 'Search & filters are implemented on the website.', 'All the pictures are created from API- there are footer-bar and footer-accordion in mobile version.', 'Mobile verison is not ready fully.'],
+        text: ['Product cards are created dynamically from API.', 'Basket is created dynamicaly, basket items are saved in localStorage.', 'Authentication modals are created dynamicaly, user data store in API, user token is saved in SessionStorage.', 'Search & filters are implemented on the website.', 'All the pictures are created from API- there are footer-bar and footer-accordion in mobile version.'],
         site: 'https://4-scopes.netlify.app/',
         git: 'https://github.com/AnnMurr/wildberries_4scopes'
     },
