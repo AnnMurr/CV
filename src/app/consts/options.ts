@@ -149,7 +149,7 @@ const PROJECT_TEXT: ProjectTextData[] = [
     {
         tag: 'work',
         name: 'L.Miloris',
-        title: 'Creted e-shop web-site using the following technologies: JS, LESS, REST API, Webpack',
+        title: 'Created e-shop web-site using the following technologies: JS, LESS, REST API, Webpack',
         text: ['Basket - adding item to user\'s basket, count of items in it, sync with API (Users).', 'Authentication - log in, log out, sign up, sync with API (Users).', 'Product Cards - dynamically created product cards from API (Cards).', 'Implemented anumations using CSS keyframes + JS.'],
         site: 'https://main--l-miloris-perfume.netlify.app/',
         git: 'https://github.com/AnnMurr/Labos-Miloris'
