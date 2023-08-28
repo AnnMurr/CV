@@ -44,7 +44,8 @@ enum AttributesValue {
     git = 50,
     js = 70,
     api = 70,
-    ts = 50
+    ts = 50,
+    react = 70
 }
 
 const LIST_ELEMENTS: ListElementsData[] = [
@@ -94,6 +95,11 @@ const LIST_ELEMENTS: ListElementsData[] = [
         class: ['progress-bar', 'ts'],
         attributes: [{ 'max': '100' }]
     },
+    {
+        title: 'React',
+        class: ['progress-bar', 'react'],
+        attributes: [{ 'max': '100' }]
+    }
 ]
 
 const DETAILS_ELEMENTS_DATA: DetailsElement[] = [
@@ -124,6 +130,10 @@ const DETAILS_ELEMENTS_DATA: DetailsElement[] = [
     {
         title: `TypeScript`,
         text: ['Understanding of TypeScript syntax, features, and benefits.', 'Ability to define and enforce data types for variables, functions, and objects.', 'Knowledge of using interfaces, classes, and modules to create modular and scalable code structures.']
+    },
+    {
+        title: `React`,
+        text: ['Creating and structuring reusable components.', 'Understanding JSX syntax.', 'State and props: Managing component data.', 'Hooks: Using useState, useEffect, and others.', 'Working with React Router.']
     }
 ]
 
@@ -139,7 +149,7 @@ const PROJECT_TEXT: ProjectTextData[] = [
     {
         tag: 'work',
         name: 'L.Miloris',
-        title: 'Creted e-shop web-site using the following technologies: JS, LESS, REST API, Parcel',
+        title: 'Creted e-shop web-site using the following technologies: JS, LESS, REST API, Webpack',
         text: ['Basket - adding item to user\'s basket, count of items in it, sync with API (Users).', 'Authentication - log in, log out, sign up, sync with API (Users).', 'Product Cards - dynamically created product cards from API (Cards).', 'Implemented anumations using CSS keyframes + JS.'],
         site: 'https://main--l-miloris-perfume.netlify.app/',
         git: 'https://github.com/AnnMurr/Labos-Miloris'
