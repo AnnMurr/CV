@@ -29,7 +29,7 @@ const InformationBlockListData = {
 
 enum InformationBlockTextData {
     'text' = `I'm a passionate and dedicated  frontend developer with around 4 months of independent learning and 7 months of formal training experience.\n 
-    I have learned html, css, JavaScript, TypeScript and I'm currently in the process of learning React.\n 
+    I have learned html, css, JavaScript, TypeScript and React.\n 
     I'm committed to continuously improving my skills and staying updated with emerging technologies in the frontend development field.\n
     I'm committed to continuous learning and growth in order to become a well-rounded frontend developer.\n
     I'm looking forward to get an opportunity to work on challenging projects that allow me to apply my expertise in JavaScript, TypeScript, and React.`
@@ -42,10 +42,10 @@ enum AttributesValue {
     sass = 80,
     scss = 80,
     git = 50,
-    js = 70,
+    js = 80,
     api = 70,
-    ts = 50,
-    react = 70
+    ts = 80,
+    react = 80
 }
 
 const LIST_ELEMENTS: ListElementsData[] = [
@@ -140,11 +140,11 @@ const DETAILS_ELEMENTS_DATA: DetailsElement[] = [
 const PROJECT_TEXT: ProjectTextData[] = [
     {
         tag: 'work',
-        name: '4Scopes',
-        title: 'Team work project that is a prototype of Wildberries',
-        text: ['Product cards are created dynamically from API.', 'Basket is created dynamicaly, basket items are saved in localStorage.', 'Authentication modals are created dynamicaly, user data store in API, user token is saved in SessionStorage.', 'Search & filters are implemented on the website.', 'All the pictures are created from API- there are footer-bar and footer-accordion in mobile version.'],
-        site: 'https://4-scopes.netlify.app/',
-        git: 'https://github.com/AnnMurr/wildberries_4scopes'
+        name: 'European-Herald',
+        title: 'Created e-shop web-site using the following technologies: React, TypeScript, REST API, Redux, and other libraries.',
+        text: ['The site features news cards that are dynamically fetched from an API.', 'Users can utilize search, filtering, and pagination features to easily find news articles of interest.', 'A search functionality has been implemented by iterating through data in Redux, filtering through API requests with filtering parameters, and pagination using dedicated functions.', 'A user registration system has been implemented, with user data stored in an API. Upon logging in, user data is retrieved from the API and stored in Redux, while the authentication token is saved in localStorage. Users can bookmark articles and update their profile settings.', 'Additionally, the website includes a weather information section. Weather data is obtained using the user\'s geolocation, and then weather information is retrieved via an API.', 'Users can also customize the site\'s theme to adapt it to their preferences.'],
+        site: 'https://annmurr.github.io/European-Herald/dist/',
+        git: 'https://github.com/AnnMurr/European-Herald'
     },
     {
         tag: 'work',
@@ -153,7 +153,15 @@ const PROJECT_TEXT: ProjectTextData[] = [
         text: ['Basket - adding item to user\'s basket, count of items in it, sync with API (Users).', 'Authentication - log in, log out, sign up, sync with API (Users).', 'Product Cards - dynamically created product cards from API (Cards).', 'Implemented anumations using CSS keyframes + JS.'],
         site: 'https://main--l-miloris-perfume.netlify.app/',
         git: 'https://github.com/AnnMurr/Labos-Miloris'
-    }
+    },
+    {
+        tag: 'work',
+        name: '4Scopes',
+        title: 'Team work project that is a prototype of Wildberries',
+        text: ['Product cards are created dynamically from API.', 'Basket is created dynamicaly, basket items are saved in localStorage.', 'Authentication modals are created dynamicaly, user data store in API, user token is saved in SessionStorage.', 'Search & filters are implemented on the website.', 'All the pictures are created from API- there are footer-bar and footer-accordion in mobile version.'],
+        site: 'https://4-scopes.netlify.app/',
+        git: 'https://github.com/AnnMurr/wildberries_4scopes'
+    }, 
 ]
 
 export {
