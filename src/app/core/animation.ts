@@ -5,7 +5,7 @@ function setProgressBarValues(): void {
 
     progressBars.forEach((progress) => {
         const progressClass: string = progress.classList[1]
-        const attributeValue: any = AttributesValue[progressClass]
+        const attributeValue: number = AttributesValue[progressClass]
 
         attributeValue && (progress.setAttribute('value', `${attributeValue}`))
     })
