@@ -45,7 +45,11 @@ enum AttributesValue {
     js = 80,
     api = 70,
     ts = 80,
-    react = 80
+    react = 80,
+    parcel = 70,
+    webpack = 50,
+    redux = 60,
+    parsel = 70
 }
 
 const LIST_ELEMENTS: ListElementsData[] = [
@@ -99,6 +103,26 @@ const LIST_ELEMENTS: ListElementsData[] = [
         title: 'React',
         class: ['progress-bar', 'react'],
         attributes: [{ 'max': '100' }]
+    },
+    {
+        title: 'Parcel',
+        class: ['progress-bar', 'parcel'],
+        attributes: [{ 'max': '100' }]
+    },
+    {
+        title: 'Webpack',
+        class: ['progress-bar', 'webpack'],
+        attributes: [{ 'max': '100' }]
+    },
+    {
+        title: 'Redux',
+        class: ['progress-bar', 'redux'],
+        attributes: [{ 'max': '100' }]
+    },
+    {
+        title: 'Parcel',
+        class: ['progress-bar', 'parcel'],
+        attributes: [{ 'max': '100' }]
     }
 ]
 
@@ -141,7 +165,7 @@ const PROJECT_TEXT: ProjectTextData[] = [
     {
         tag: 'work',
         name: 'European-Herald',
-        title: 'Created e-shop web-site using the following technologies: React, TypeScript, REST API, Redux, and other libraries.',
+        title: 'Created news web-site using the following technologies: React, TypeScript, REST API, Redux, and other libraries.',
         text: ['The site features news cards that are dynamically fetched from an API.', 'Users can utilize search, filtering, and pagination features to easily find news articles of interest.', 'A search functionality has been implemented by iterating through data in Redux, filtering through API requests with filtering parameters, and pagination using dedicated functions.', 'A user registration system has been implemented, with user data stored in an API. Upon logging in, user data is retrieved from the API and stored in Redux, while the authentication token is saved in localStorage. Users can bookmark articles and update their profile settings.', 'Additionally, the website includes a weather information section. Weather data is obtained using the user\'s geolocation, and then weather information is retrieved via an API.', 'Users can also customize the site\'s theme to adapt it to their preferences.'],
         site: 'https://annmurr.github.io/European-Herald/dist/',
         git: 'https://github.com/AnnMurr/European-Herald'
