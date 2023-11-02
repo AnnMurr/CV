@@ -33,6 +33,20 @@
         }
     }
 
+    .certifications-block {
+        &__title h4 {
+            color: $color-White;
+        }
+
+        &__subTitle h5 {
+            color: $color-White;
+        }
+
+        &__link a {
+            color: $color-White;
+        }
+    }
+
     .details-item {
         &__title h4 {
             color: $color-White;
@@ -68,9 +82,9 @@
         &__list li {
             color: $color-White;
         }
-    
+
         &__title h5 {
-    
+
             color: $color-White;
         }
 
@@ -90,18 +104,18 @@
             transition: all 0.5s ease;
             background-image:
                 linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    
+
             &:before {
                 background-color: $color-MineShaft;
             }
-    
+
             &:after {
                 transition: all 0.5s ease;
                 color: $color-White;
                 background-image:
                     linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
             }
-    
+
         }
     }
 
@@ -140,6 +154,20 @@
             }
         }
 
+        .certifications-block {
+            &__title h4 {
+                color: $color-Black;
+            }
+
+            &__subTitle h5 {
+                color: $color-Black;
+            }
+
+            &__link a {
+                color: $color-Black;
+            }
+        }
+
         .details-item {
             &__title h4 {
                 color: $color-Black;
@@ -152,7 +180,7 @@
 
         .about {
             .information {
-                background-color:transparent;
+                background-color: transparent;
                 box-shadow: none;
                 border: 2px solid black;
 
@@ -160,12 +188,12 @@
                     & span:first-child {
                         color: $color-Black;
                     }
-    
+
                     & span:nth-child(2) {
                         color: $color-Black;
                     }
                 }
-    
+
                 &__article p {
                     color: $color-Black;
                 }
@@ -176,9 +204,9 @@
             &__list li {
                 color: $color-Black;
             }
-        
+
             &__title h5 {
-        
+
                 color: $color-Black;
             }
 
@@ -202,28 +230,26 @@
                 background-image: none;
                 background-color: $color-MineShaft;
                 border: 3px solid $color-MineShaft;
-               
+
 
                 &:hover {
                     background-color: transparent;
-                
+
 
                     &::after {
                         color: $color-Black;
                     }
                 }
-        
+
                 &:before {
                     background-color: transparent;
                 }
-        
+
                 &:after {
                     background-image: none;
                 }
-        
+
             }
         }
     }
 }
-
-
