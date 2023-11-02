@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "stream": "^0.0.2"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",

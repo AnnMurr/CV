@@ -19,6 +19,14 @@ type DetailsElement = {
     text: string[]
 }
 
+interface CertificationsData {
+    title: string,
+    subTitle: string,
+    link: string,
+    textLink: string,
+    icon: string
+}
+
 const InformationBlockListData = {
     'Name': 'Hanna',
     'Age': getAge(),
@@ -28,7 +36,7 @@ const InformationBlockListData = {
 }
 
 enum InformationBlockTextData {
-    'text' = `I'm a passionate and dedicated  frontend developer with around 4 months of independent learning and 7 months of formal training experience.\n 
+    'text' = `I'm a passionate and dedicated  frontend developer with around 4 months of independent learning and 8 months of formal training experience.\n 
     I have learned html, css, JavaScript, TypeScript and React.\n 
     I'm committed to continuously improving my skills and staying updated with emerging technologies in the frontend development field.\n
     I'm committed to continuous learning and growth in order to become a well-rounded frontend developer.\n
@@ -185,7 +193,24 @@ const PROJECT_TEXT: ProjectTextData[] = [
         text: ['Product cards are created dynamically from API.', 'Basket is created dynamicaly, basket items are saved in localStorage.', 'Authentication modals are created dynamicaly, user data store in API, user token is saved in SessionStorage.', 'Search & filters are implemented on the website.', 'All the pictures are created from API- there are footer-bar and footer-accordion in mobile version.'],
         site: 'https://4-scopes.netlify.app/',
         git: 'https://github.com/AnnMurr/wildberries_4scopes'
-    }, 
+    },
+]
+
+const SERTIFICATIONS_DATA: CertificationsData[] = [
+    {
+        title: 'FrontEnd Developer',
+        subTitle: 'TeachMeSkills',
+        link: 'https://drive.google.com/file/d/1mD7Ax1Q-3gHF3i_Pj7gUGTJ6f86HevHr/view?usp=sharing',
+        textLink: 'certificate',
+        icon: 'https://i.imgur.com/mftjVFI.png'
+    },
+    {
+        title: 'JavaScript for beginners',
+        subTitle: 'Stepik',
+        link: 'https://stepik.org/cert/1641877?lang=en',
+        textLink: 'certificate',
+        icon: 'https://i.imgur.com/mUADYJ0.png'
+    },
 ]
 
 export {
@@ -193,6 +218,7 @@ export {
     DETAILS_ELEMENTS_DATA,
     PROJECT_TEXT,
     InformationBlockListData,
+    SERTIFICATIONS_DATA,
     InformationBlockTextData,
     AttributesValue
 }
