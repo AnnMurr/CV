@@ -219,6 +219,13 @@ const SERTIFICATIONS_DATA: CertificationsData[] = [
         textLink: 'certificate',
         icon: 'https://i.imgur.com/mUADYJ0.png'
     },
+    {
+        title: 'English',
+        subTitle: 'Skillbox',
+        link: 'https://drive.google.com/file/d/1ceIo8AXoIip0c5VZbZh0UW9vos_am-Vt/view?usp=sharing',
+        textLink: 'certificate',
+        icon: 'https://i.imgur.com/QLi5MWB.png'
+    },
 ]
 
 export {
