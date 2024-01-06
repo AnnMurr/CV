@@ -180,6 +180,14 @@ const PROJECT_TEXT: ProjectTextData[] = [
     },
     {
         tag: 'work',
+        name: 'Oven_Opera',
+        title: 'Designed a pizza website using the following technologies: JavaScript, SCSS, REST API, and Webpack.',
+        text: ['Product cards are dynamically generated using an API.', 'Users can add selected products to their cart. Afterward, they can proceed to place an order by filling out the corresponding form.', 'Functionality for entering promo codes is available to receive discounts based on specific conditions.', 'There is an option to create a custom pizza using an interactive builder.'],
+        site: 'https://annmurr.github.io/Oven_Opera/dist/',
+        git: 'https://github.com/AnnMurr/Oven_Opera'
+    },
+    {
+        tag: 'work',
         name: 'L.Miloris',
         title: 'Created e-shop web-site using the following technologies: JS, LESS, REST API, Webpack',
         text: ['Basket - adding item to user\'s basket, count of items in it, sync with API (Users).', 'Authentication - log in, log out, sign up, sync with API (Users).', 'Product Cards - dynamically created product cards from API (Cards).', 'Implemented anumations using CSS keyframes + JS.'],
