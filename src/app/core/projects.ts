@@ -78,7 +78,7 @@ function createProjectLinks(webSite: string, github: string): HTMLElement {
     const links: HTMLDivElement = document.createElement('div')
     links.classList.add('work__links')
     const webSiteLink = createLinkOnWebsite(webSite)
-    const githubLink = reateLinkOnGithub(github)
+    const githubLink = createLinkOnGithub(github)
 
     links.append(webSiteLink, githubLink)
 
@@ -93,7 +93,7 @@ function createLinkOnWebsite(webSite: string): HTMLElement {
     return webSiteLink
 }
 
-function reateLinkOnGithub(github: string): HTMLElement {
+function createLinkOnGithub(github: string): HTMLElement {
     const githubLink: HTMLAnchorElement = document.createElement('a')
     githubLink.classList.add('btn', 'btn_small')
     githubLink.href = github
