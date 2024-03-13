@@ -36,28 +36,31 @@ const InformationBlockListData = {
 }
 
 enum InformationBlockTextData {
-    'text' = `I'm a passionate and dedicated  frontend developer with around 4 months of independent learning and 8 months of formal training experience.\n 
-    I have learned html, css, JavaScript, TypeScript and React.\n 
-    I'm committed to continuously improving my skills and staying updated with emerging technologies in the frontend development field.\n
-    I'm committed to continuous learning and growth in order to become a well-rounded frontend developer.\n
-    I'm looking forward to get an opportunity to work on challenging projects that allow me to apply my expertise in JavaScript, TypeScript, and React.`
+    'text' = `I'm a passionate and dedicated frontend developer with around 6 months 
+    of independent learning and 8 months of formal training experience. I have learned 
+    HTML, CSS, JavaScript, TypeScript, and React, along with other related front-end technologies 
+    and frameworks. I'm committed to continuously improving my skills and staying updated with 
+    emerging technologies in the frontend development field. I'm committed to continuous learning 
+    and growth in order to become a well-rounded frontend developer. I'm looking forward to get an 
+    opportunity to work on challenging projects that allow me to apply my expertise.`
 }
 
 enum AttributesValue {
-    html = 80,
-    css = 80,
-    less = 80,
-    sass = 80,
-    scss = 80,
+    html = 90,
+    css = 90,
+    less = 90,
+    sass = 90,
+    scss = 90,
     git = 50,
     js = 80,
     api = 70,
     ts = 80,
-    react = 80,
+    react = 85,
     parcel = 70,
-    webpack = 50,
+    webpack = 60,
     redux = 60,
-    parsel = 70
+    parsel = 70,
+    nodeJs = 50
 }
 
 const LIST_ELEMENTS: ListElementsData[] = [
@@ -131,6 +134,11 @@ const LIST_ELEMENTS: ListElementsData[] = [
         title: 'Parcel',
         class: ['progress-bar', 'parcel'],
         attributes: [{ 'max': '100' }]
+    },
+    {
+        title: 'Node.js',
+        class: ['progress-bar', 'nodeJs'],
+        attributes: [{ 'max': '100' }]
     }
 ]
 
@@ -166,7 +174,11 @@ const DETAILS_ELEMENTS_DATA: DetailsElement[] = [
     {
         title: `React`,
         text: ['Creating and structuring reusable components.', 'Understanding JSX syntax.', 'State and props: Managing component data.', 'Hooks: Using useState, useEffect, and others.', 'Working with React Router.']
-    }
+    },
+    {
+        title: `Node.js`,
+        text: ['Proficient in building server-side applications using Node.js.', 'Experience with core Node.js modules and npm packages.', 'Creating RESTful APIs using frameworks like Express.js.', 'Utilizing templating engines such as EJS, for server-side rendering.']
+    },
 ]
 
 const PROJECT_TEXT: ProjectTextData[] = [
@@ -193,14 +205,6 @@ const PROJECT_TEXT: ProjectTextData[] = [
         text: ['Basket - adding item to user\'s basket, count of items in it, sync with API (Users).', 'Authentication - log in, log out, sign up, sync with API (Users).', 'Product Cards - dynamically created product cards from API (Cards).', 'Implemented anumations using CSS keyframes + JS.'],
         site: 'https://main--l-miloris-perfume.netlify.app/',
         git: 'https://github.com/AnnMurr/Labos-Miloris'
-    },
-    {
-        tag: 'work',
-        name: '4Scopes',
-        title: 'Team work project that is a prototype of Wildberries',
-        text: ['Product cards are created dynamically from API.', 'Basket is created dynamicaly, basket items are saved in localStorage.', 'Authentication modals are created dynamicaly, user data store in API, user token is saved in SessionStorage.', 'Search & filters are implemented on the website.', 'All the pictures are created from API- there are footer-bar and footer-accordion in mobile version.'],
-        site: 'https://4-scopes.netlify.app/',
-        git: 'https://github.com/AnnMurr/wildberries_4scopes'
     },
 ]
 
