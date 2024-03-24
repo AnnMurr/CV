@@ -208,8 +208,8 @@ const PROJECT_TEXT: ProjectTextData[] = [
     },
     {
         tag: 'work',
-        name: 'Mess Chat',
-        title: 'Created chat website using the following technologies: React, Node.js and other libraries',
+        name: 'MessChat',
+        title: 'Created chat website using the following technologies: React, Node.js and other libraries.',
         text: ['Designed a chat-based website featuring real-time user presence.', 'Implementation of a server with socket-based data transmission for efficient message exchange.', 'Interactive website interface with animations, allowing users to generate unique links for accessing the chat.', 'Personalized entry into the chat with options to choose usernames and emojis.', 'Capabilities for sharing links to invite others to join the chat.'],
         site: 'https://main--mess-chat.netlify.app/',
         git: 'https://github.com/AnnMurr/MesRoom'
