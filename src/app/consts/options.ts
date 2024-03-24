@@ -201,10 +201,18 @@ const PROJECT_TEXT: ProjectTextData[] = [
     {
         tag: 'work',
         name: 'L.Miloris',
-        title: 'Created e-shop web-site using the following technologies: JS, LESS, REST API, Webpack',
+        title: 'Created e-shop web-site using the following technologies: JS, LESS, REST API, Webpack.',
         text: ['Basket - adding item to user\'s basket, count of items in it, sync with API (Users).', 'Authentication - log in, log out, sign up, sync with API (Users).', 'Product Cards - dynamically created product cards from API (Cards).', 'Implemented anumations using CSS keyframes + JS.'],
         site: 'https://main--l-miloris-perfume.netlify.app/',
         git: 'https://github.com/AnnMurr/Labos-Miloris'
+    },
+    {
+        tag: 'work',
+        name: 'Mess Chat',
+        title: 'Created chat website using the following technologies: React, Node.js and other libraries',
+        text: ['Designed a chat-based website featuring real-time user presence.', 'Implementation of a server with socket-based data transmission for efficient message exchange.', 'Interactive website interface with animations, allowing users to generate unique links for accessing the chat.', 'Personalized entry into the chat with options to choose usernames and emojis.', 'Capabilities for sharing links to invite others to join the chat.'],
+        site: 'https://main--mess-chat.netlify.app/',
+        git: 'https://github.com/AnnMurr/MesRoom'
     },
 ]
 
