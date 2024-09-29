@@ -60,7 +60,7 @@ enum AttributesValue {
     webpack = 60,
     redux = 60,
     parsel = 70,
-    nodeJs = 50
+    nodeJs = 40
 }
 
 const LIST_ELEMENTS: ListElementsData[] = [
@@ -128,11 +128,6 @@ const LIST_ELEMENTS: ListElementsData[] = [
     {
         title: 'Redux',
         class: ['progress-bar', 'redux'],
-        attributes: [{ 'max': '100' }]
-    },
-    {
-        title: 'Parcel',
-        class: ['progress-bar', 'parcel'],
         attributes: [{ 'max': '100' }]
     },
     {
