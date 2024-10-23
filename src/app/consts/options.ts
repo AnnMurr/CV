@@ -9,6 +9,7 @@ interface ProjectTextData {
     tag: string,
     name: string,
     title: string,
+    info?: string,
     text: string[],
     site: string,
     git: string
@@ -36,13 +37,9 @@ const InformationBlockListData = {
 }
 
 enum InformationBlockTextData {
-    'text' = `I'm a passionate and dedicated frontend developer with around 6 months 
-    of independent learning and 8 months of formal training experience. I have learned 
-    HTML, CSS, JavaScript, TypeScript, and React, along with other related front-end technologies 
-    and frameworks. I'm committed to continuously improving my skills and staying updated with 
-    emerging technologies in the frontend development field. I'm committed to continuous learning 
-    and growth in order to become a well-rounded frontend developer. I'm looking forward to get an 
-    opportunity to work on challenging projects that allow me to apply my expertise.`
+    'text' = `
+    I am a beginner frontend developer with experience in creating responsive and visually appealing websites. I have strong skills in HTML, CSS (including Less, Sass, and SCSS), and JavaScript, as well as experience with TypeScript for safe development. I can create RESTful APIs and integrate them into web applications, and I am skilled in using Redux Toolkit for effective state management.
+    I also have experience with building and optimizing web resources using Webpack and Parcel. I am familiar with server-side development using Node.js and working with MongoDB. Using Figma, I implement UI/UX designs into code. I always strive to improve my skills and knowledge in frontend development and I am interested in new technologies.`
 }
 
 enum AttributesValue {
@@ -54,12 +51,11 @@ enum AttributesValue {
     git = 50,
     js = 80,
     api = 70,
-    ts = 80,
+    ts = 70,
     react = 85,
     parcel = 70,
-    webpack = 60,
-    redux = 60,
-    parsel = 70,
+    webpack = 50,
+    redux = 50,
     nodeJs = 40
 }
 
@@ -126,7 +122,7 @@ const LIST_ELEMENTS: ListElementsData[] = [
         attributes: [{ 'max': '100' }]
     },
     {
-        title: 'Redux',
+        title: 'Redux Toolkit',
         class: ['progress-bar', 'redux'],
         attributes: [{ 'max': '100' }]
     },
@@ -179,33 +175,60 @@ const DETAILS_ELEMENTS_DATA: DetailsElement[] = [
 const PROJECT_TEXT: ProjectTextData[] = [
     {
         tag: 'work',
+        name: 'CashFlow',
+        title: 'A budget management website developed using: React, TypeScript, REST API, Redux, MUI, and other libraries.',
+        info: 'Due to the use of Render\'s free plan, the server may "sleep" after periods of inactivity, causing a delay on the first request after the idle time. After the initial request, the server operates without delays.',
+        text: [
+            'Authentication via Firebase and MongoDB: Implemented user authentication with email/password and Google OAuth, securely managing user data across Firebase and MongoDB.',
+            'Expense and Income Management: Developed functionality for users to track, add, and manage their income and expenses.',
+            'Comprehensive Statistics: Provided detailed statistics for all financial data, with filtering options by day, week, month, year, or custom date ranges.',
+            'Income and Expense Charts: Created visual representations of financial data using dynamic charts.',
+            'Budget Planning: Implemented tools for users to create, manage, and track their financial planning goals.',
+            'User Settings and Customization: Enabled users to personalize account settings, including site themes, preferred currency, and custom chart colors.',
+            'State Management with Redux: Utilized Redux for managing application state and handling asynchronous data fetching from both the backend server and MocAPI.'
+        ],
+        site: 'https://cash-flow-budget.netlify.app',
+        git: 'https://github.com/AnnMurr/CashFlow'
+    },
+    {
+        tag: 'work',
         name: 'European-Herald',
-        title: 'Created news web-site using the following technologies: React, TypeScript, REST API, Redux, and other libraries.',
-        text: ['The site features news cards that are dynamically fetched from an API.', 'Users can utilize search, filtering, and pagination features to easily find news articles of interest.', 'A search functionality has been implemented by iterating through data in Redux, filtering through API requests with filtering parameters, and pagination using dedicated functions.', 'A user registration system has been implemented, with user data stored in an API. Upon logging in, user data is retrieved from the API and stored in Redux, while the authentication token is saved in localStorage. Users can bookmark articles and update their profile settings.', 'Additionally, the website includes a weather information section. Weather data is obtained using the user\'s geolocation, and then weather information is retrieved via an API.', 'Users can also customize the site\'s theme to adapt it to their preferences.'],
+        title: 'Created news website using the following technologies: React, TypeScript, REST API, Redux, and other libraries.',
+        text: [
+            'The site features news cards that are dynamically fetched from an API.',
+            'Users can utilize search, filtering, and pagination features to easily find news articles of interest.',
+            'A search functionality has been implemented by iterating through data in Redux, filtering through API requests with filtering parameters, and pagination using dedicated functions.',
+            'A user registration system has been implemented, with user data stored in an API. Upon logging in, user data is retrieved from the API and stored in Redux, while the authentication token is saved in localStorage. Users can bookmark articles and update their profile settings.',
+            'Additionally, the website includes a weather information section. Weather data is obtained using the user\'s geolocation, and then weather information is retrieved via an API.',
+            'Users can also customize the site\'s theme to adapt it to their preferences.'
+        ],
         site: 'https://annmurr.github.io/European-Herald/dist/',
         git: 'https://github.com/AnnMurr/European-Herald'
     },
     {
         tag: 'work',
         name: 'Oven_Opera',
-        title: 'Designed a pizza website using the following technologies: JavaScript, SCSS, REST API, and Webpack.',
-        text: ['Product cards are dynamically generated using an API.', 'Users can add selected products to their cart. Afterward, they can proceed to place an order by filling out the corresponding form.', 'Functionality for entering promo codes is available to receive discounts based on specific conditions.', 'There is an option to create a custom pizza using an interactive builder.'],
+        title: 'A pizza delivery website designed using: JavaScript, SCSS, REST API, and Webpack.',
+        text: [
+            'Product cards are dynamically generated using an API.',
+            'Users can add selected products to their cart. Afterward, they can proceed to place an order by filling out the corresponding form.',
+            'Functionality for entering promo codes is available to receive discounts based on specific conditions.',
+            'There is an option to create a custom pizza using an interactive builder.'],
         site: 'https://annmurr.github.io/Oven_Opera/dist/',
         git: 'https://github.com/AnnMurr/Oven_Opera'
     },
     {
         tag: 'work',
-        name: 'L.Miloris',
-        title: 'Created e-shop web-site using the following technologies: JS, LESS, REST API, Webpack.',
-        text: ['Basket - adding item to user\'s basket, count of items in it, sync with API (Users).', 'Authentication - log in, log out, sign up, sync with API (Users).', 'Product Cards - dynamically created product cards from API (Cards).', 'Implemented anumations using CSS keyframes + JS.'],
-        site: 'https://main--l-miloris-perfume.netlify.app/',
-        git: 'https://github.com/AnnMurr/Labos-Miloris'
-    },
-    {
-        tag: 'work',
         name: 'MessChat',
         title: 'Created chat website using the following technologies: React, Node.js and other libraries.',
-        text: ['Designed a chat-based website featuring real-time user presence.', 'Implementation of a server with socket-based data transmission for efficient message exchange.', 'Interactive website interface with animations, allowing users to generate unique links for accessing the chat.', 'Personalized entry into the chat with options to choose usernames and emojis.', 'Capabilities for sharing links to invite others to join the chat.'],
+        info: 'Due to the use of Render\'s free plan, the server may "sleep" after periods of inactivity, causing a delay on the first request after the idle time. After the initial request, the server operates without delays.',
+        text: [
+            'Designed a chat-based website featuring real-time user presence.',
+            'Implementation of a server with socket-based data transmission for efficient message exchange.',
+            'Interactive website interface with animations, allowing users to generate unique links for accessing the chat.',
+            'Personalized entry into the chat with options to choose usernames and emojis.',
+            'Capabilities for sharing links to invite others to join the chat.'
+        ],
         site: 'https://main--mess-chat.netlify.app/',
         git: 'https://github.com/AnnMurr/MesRoom'
     },
