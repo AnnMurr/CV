@@ -84,8 +84,17 @@
         }
 
         &__title h5 {
-
             color: $color-White;
+        }
+
+        &__info {
+            span {
+                color: $color-White;
+            }
+
+            span:first-child {
+                color: red;
+            }
         }
 
         .work__links a:nth-child(2) {
@@ -206,8 +215,17 @@
             }
 
             &__title h5 {
-
                 color: $color-Black;
+            }
+
+            &__info {
+                span {
+                    color: $color-Black;
+                }
+
+                span:first-child {
+                    color: red;
+                }
             }
 
             .work__links a:nth-child(2) {

@@ -17,22 +17,36 @@ export function createWorkWrapper(): void {
     PROJECT_TEXT.forEach(item => {
         const work: HTMLDivElement = document.createElement('div')
         work.classList.add(item.tag)
-        work.append(createWorkDeskription(item.name, item.title, item.text), createProjectLinks(item.site, item.git))
+        work.append(createWorkDeskription(item.name, item.title, item.text, item?.info), createProjectLinks(item.site, item.git))
         project.append(work)
     })
 
     infoWrapper?.append(project)
 }
 
-function createWorkDeskription(name: string, title: string, text: string[]): HTMLElement {
+function createWorkDeskription(name: string, title: string, text: string[], info: string | undefined): HTMLElement {
     const deskription: HTMLDivElement = document.createElement('div')
     deskription.classList.add('work__description')
-    deskription.append(createHeading(name), createDubleLine(), createWorkInner(title, text))
+    deskription.append(createHeading(name), createDubleLine(), createWorkInner(title, text, info))
 
     return deskription
 }
 
-function createWorkText(wrapper: HTMLElement, title: string, text: string[]): void {
+function createAdditionalInfo(text: string): HTMLElement {
+    const container: HTMLDivElement = document.createElement('div')
+    container.classList.add('work__info')
+    const span: HTMLSpanElement = document.createElement('span')
+    span.textContent = text
+    const warning = document.createElement('span')
+    warning.textContent = '! Important note ! '
+
+    container.append(warning, span)
+
+    return container
+}
+
+
+function createWorkText(wrapper: HTMLElement, title: string, text: string[], info: string | undefined): void {
     const workTitle: HTMLElement | null = createWorkTitle()
     const workList: HTMLElement | null = createWorkList()
 
@@ -49,13 +63,16 @@ function createWorkText(wrapper: HTMLElement, title: string, text: string[]): vo
     }
 
     workTitle.append(workTitleText)
-    wrapper.append(workTitle, workList)
+    wrapper.append(workTitle)
+    info && wrapper.append(createAdditionalInfo(info))
+    wrapper.append(workList)
+    
 }
 
-function createWorkInner(title: string, text: string[]): HTMLElement {
+function createWorkInner(title: string, text: string[], info: string | undefined): HTMLElement {
     const wrapper: HTMLDivElement = document.createElement('div')
     wrapper.classList.add('work__inner')
-    createWorkText(wrapper, title, text)
+    createWorkText(wrapper, title, text, info)
 
     return wrapper
 }

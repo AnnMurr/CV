@@ -51,7 +51,7 @@ function createImageBlock(): HTMLElement {
     imageWrapper.classList.add('about__image')
     const image: HTMLImageElement = document.createElement('img')
 
-    image.src = 'https://i.imgur.com/O1L4z83.png'
+    image.src = 'https://i.imgur.com/VOYHAp7.jpg'
     image.alt = 'My photo'
     image.loading = 'eager'
     imageWrapper.append(image)
